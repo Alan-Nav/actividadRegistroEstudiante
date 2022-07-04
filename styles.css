@@ -1,0 +1,123 @@
+:root {
+  --fuente: "Red Hat Display", sans-serif;
+
+  --principal: #161853;
+  --principal-claro: #292c6d;
+  --contraste: #ec255a;
+  --claro: #faedf0;
+  --negro: #000;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: var(--fuente);
+  font-size: 1.6rem;
+  line-height: 2;
+  background-color: var(--principal);
+  color: var(--claro);
+}
+
+.alinear-texto {
+  text-align: center;
+}
+
+h1 {
+  color: var(--contraste);
+  font-size: 4rem;
+  margin-bottom: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+  margin: 3rem 0;
+}
+
+h3 {
+  font-size: 3rem;
+  margin-top: 8rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--contraste);
+}
+
+.sec2 {
+  margin-top: 3rem;
+}
+
+table,
+th,
+td {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--claro);
+  overflow: hidden;
+  padding: 1.5rem;
+}
+
+th {
+  font-size: 1.5rem;
+  color: var(--contraste);
+}
+
+td {
+  padding: 0 1rem;
+}
+
+.fil {
+  font-size: 1.5rem;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.campo {
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.campo_label {
+  font-size: 2rem;
+}
+
+.campo_field {
+  margin: 0 auto;
+  width: 95%;
+  height: 3rem;
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: var(--fuente);
+  border-radius: 1rem;
+}
+
+.boton {
+  background-color: var(--contraste);
+  width: 100%;
+  margin: 2rem auto 0 auto;
+  padding: 1rem;
+  font-size: 2rem;
+  text-align: center;
+  color: var(--claro);
+  border: none;
+  border-radius: 8%;
+}
+
+.boton:hover {
+  background-color: var(--principal-claro);
+  color: var(--contraste);
+  cursor: pointer;
+}
